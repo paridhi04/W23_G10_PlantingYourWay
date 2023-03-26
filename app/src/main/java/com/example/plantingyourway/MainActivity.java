@@ -16,5 +16,6 @@ public class MainActivity extends AppCompatActivity {
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setDisplayUseLogoEnabled(true);
         actionBar.setTitle("Planting Your Way");
+        //Comment
     }
 }
