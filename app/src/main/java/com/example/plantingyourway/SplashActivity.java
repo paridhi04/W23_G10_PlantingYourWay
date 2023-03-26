@@ -22,6 +22,7 @@ public class SplashActivity extends AppCompatActivity {
             }
         };
         Timer timer = new Timer();
+        //Adding timer for 4 seconds
         timer.schedule(timerTask,4000);
     }
 }
