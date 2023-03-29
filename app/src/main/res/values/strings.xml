@@ -2,4 +2,11 @@
     <string name="app_name">PlantingYourWay</string>
     <string name="txtAboutUs">About Us</string>
     <string name="aboutUsDescription">Welcome to our online plant store! We\'re a team of passionate plant enthusiasts who want to make it easy for you to find and purchase the perfect plants for your space. Our app offers a wide variety of plants sourced from top growers, and we\'re dedicated to providing exceptional customer service. Thank you for choosing us to bring the beauty of nature into your home or office!</string>
+    <string name="shopNowBtn">Shop Now</string>
+    <string name="btnSignUp">Sign Up</string>
+    <string name="txtViewAlreadyAccount">Already have an account?</string>
+    <string name="txtViewSignIn">Sign In</string>
+    <string name="txtViewNoAccount">Don\'t have an account?</string>
+    <string name="btnSignIn">Sign In</string>
+    <string name="txtViewSignUp">Sign Up</string>
 </resources>
