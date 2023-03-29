@@ -30,14 +30,17 @@
         app:layout_constraintTop_toBottomOf="@+id/imageBanner"
         app:layout_constraintVertical_bias="0.04000002" />
 
-    <EditText
+    <TextView
         android:id="@+id/txtDescriptionAboutUs"
-        android:layout_width="wrap_content"
-        android:layout_height="200dp"
-        android:ems="10"
+        android:layout_width="283dp"
+        android:layout_height="245dp"
+        android:ellipsize="end"
+        android:ems="20"
         android:inputType="textPersonName"
         android:justificationMode="inter_word"
+        android:maxLines="3"
         android:padding="20sp"
+        android:scrollbars="none"
         android:text="@string/aboutUsDescription"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
