@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
+
 public class LoginActivity extends AppCompatActivity {
 
     EditText editTxtEmail, editTxtPassword;
@@ -24,6 +25,8 @@ public class LoginActivity extends AppCompatActivity {
 
         editTxtEmail = findViewById(R.id.editTxtEmail);
         editTxtPassword = findViewById(R.id.editTxtPassword);
+
+//        SQLiteDatabase.loadLibs(this);
     }
 
     public void signIn(View view){

@@ -9,4 +9,60 @@
     <string name="txtViewNoAccount">Don\'t have an account?</string>
     <string name="btnSignIn">Sign In</string>
     <string name="txtViewSignUp">Sign Up</string>
+
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_name">Name</string>
+    <string name="prompt_service_name">Service Name</string>
+    <string name="prompt_address">Address</string>
+    <string name="prompt_add_serice">Add Service</string>
+    <string name="prompt_phone">Phone No</string>
+    <string name="prompt_price">Price</string>
+    <string name="prompt_city">City</string>
+    <string name="prompt_province">Province</string>
+    <string name="label_login">Login</string>
+    <string name="already_registered">Already Registered</string>
+    <string name="label_register">Register</string>
+
+
+    <string-array name="provinces">
+        <item>Alberta</item>
+        <item>BC</item>
+        <item>Manitoba</item>
+        <item>Nova Scotia</item>
+        <item>Ontario</item>
+        <item>Quebec</item>
+    </string-array>
+
+    <string-array name="alberta_cities">
+        <item>Calgary</item>
+        <item>Edmonton</item>
+        <item>Airdrie</item>
+    </string-array>
+    <string-array name="bc_cities">
+        <item>Vancouver</item>
+        <item>Surrey</item>
+        <item>New Westminster</item>
+    </string-array>
+    <string-array name="manitoba_cities">
+        <item>Winnipeg</item>
+        <item>Brandon</item>
+        <item>Winkler</item>
+    </string-array>
+    <string-array name="nova_scotia_cities">
+        <item>Halifax</item>
+        <item>Sydney</item>
+        <item>Bedford</item>
+    </string-array>
+    <string-array name="ontario_cities">
+        <item>Toronto</item>
+        <item>Mississauga</item>
+        <item>Ottawa</item>
+    </string-array>
+    <string-array name="quebec_cities">
+    <item>Montreal</item>
+    <item>Laval</item>
+    <item>Sherbrooke</item>
+    </string-array>
+
 </resources>

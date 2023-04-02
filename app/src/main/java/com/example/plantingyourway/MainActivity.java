@@ -2,8 +2,10 @@ package com.example.plantingyourway;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.room.Entity;
-import androidx.room.Room;
+//import androidx.room.Entity;
+//import androidx.room.Room;
+//
+//import net.sqlcipher.database.SQLiteDatabase;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -21,6 +23,8 @@ public class MainActivity extends AppCompatActivity {
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setDisplayUseLogoEnabled(true);
         actionBar.setTitle("Planting Your Way");
+
+//        SQLiteDatabase.loadLibs(this);
 
         Button BtnShopNow = findViewById(R.id.btnShopNow);
 
