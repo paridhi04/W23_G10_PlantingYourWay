@@ -23,6 +23,9 @@
     <string name="label_login">Login</string>
     <string name="already_registered">Already Registered</string>
     <string name="label_register">Register</string>
+    <string name="not_registered_yet">Not Registered Yet</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="remember_me">Remember Me</string>
 
 
     <string-array name="provinces">
@@ -64,5 +67,7 @@
     <item>Laval</item>
     <item>Sherbrooke</item>
     </string-array>
-
+    <string name="facebook_app_id">954065955736704</string>
+    <string name="fb_login_protocol_scheme">2698533c6b596a6ecb99d7dbab6584d8</string>
+    <string name="facebook_client_token">2698533c6b596a6ecb99d7dbab6584d8</string>
 </resources>

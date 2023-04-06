@@ -8,7 +8,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.plantingyourway"
-        minSdk 21
+        minSdk 23
         targetSdk 33
         versionCode 1
         versionName "1.0"
@@ -43,6 +43,9 @@ dependencies {
 
     implementation 'com.squareup.retrofit2:converter-gson:2.8.1'
 
+    implementation 'com.facebook.android:facebook-login:latest.release'
+//    implementation 'com.facebook.android:facebook-login:[latest_version]'
+    implementation 'com.facebook.android:facebook-core:latest.release'
 
 //    //SQLite
 //    implementation 'net.zetetic:android-database-sqlcipher:4.4.2'

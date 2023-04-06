@@ -43,7 +43,7 @@ public class DBManager {
 
     public long insertServiceProvider(UserDetailsDataModel userDetailsDataModel) {
         ContentValues contentValue = new ContentValues();
-        contentValue.put(DatabaseHelper.COL_ID, userDetailsDataModel.getId());
+//        contentValue.put(DatabaseHelper.COL_ID, userDetailsDataModel.getId());
         contentValue.put(DatabaseHelper.COL_USER_NAME, userDetailsDataModel.getUserName());
         contentValue.put(DatabaseHelper.COL_USER_ADDRESS, userDetailsDataModel.getUserAddress());
         contentValue.put(DatabaseHelper.COL_USER_CITY, userDetailsDataModel.getUserCity());
@@ -53,5 +53,15 @@ public class DBManager {
         contentValue.put(DatabaseHelper.COL_USER_PHONE_NO, userDetailsDataModel.getUserPhone());
         return database.insert(DatabaseHelper.TABLE_USERS, null, contentValue);
     }
+    public Cursor fetchUserDetails(String email, String password) {
+        String sqlString = "SELECT * FROM " + DatabaseHelper.TABLE_USERS + " WHERE " +
+                DatabaseHelper.COL_USER_EMAIL + "='" + email + "' and " +
+                DatabaseHelper.COL_USER_PASSWORD + "='" + password + "' and ";
 
+        Cursor cursor = database.rawQuery(sqlString, null);
+        if (cursor != null) {
+            cursor.moveToFirst();
+        }
+        return cursor;
+    }
 }
