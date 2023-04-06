@@ -59,8 +59,8 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
         tilPhone = findViewById(R.id.til_phone);
 
 
-        etEmail = findViewById(R.id.et_email);
-        etPassword = findViewById(R.id.et_password);
+        etEmail = findViewById(R.id.editTxtEmail);
+        etPassword = findViewById(R.id.editTxtPassword);
         etName = findViewById(R.id.et_name);
         etAddress = findViewById(R.id.et_address);
         etPhone = findViewById(R.id.et_phone);

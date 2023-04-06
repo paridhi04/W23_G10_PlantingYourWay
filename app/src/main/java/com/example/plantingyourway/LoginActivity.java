@@ -29,7 +29,6 @@ import com.google.android.material.textfield.TextInputLayout;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.util.Arrays;
 import java.util.regex.Pattern;
 
 
@@ -38,7 +37,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     TextInputLayout tilPassword;
     TextInputEditText etEmail;
     TextInputEditText etPassword;
-    //    TextView tvSignUpUser;
     TextView tvSignUp;
     MaterialButton btnLogin;
 
@@ -76,12 +74,12 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     private void initializeUI() {
         tilEmail = findViewById(R.id.til_email);
         tilPassword = findViewById(R.id.til_password);
-        etEmail = findViewById(R.id.et_email);
-        etPassword = findViewById(R.id.et_password);
-        tvSignUp = findViewById(R.id.tv_signup);
+        etEmail = findViewById(R.id.editTxtEmail);
+        etPassword = findViewById(R.id.editTxtPassword);
+        tvSignUp = findViewById(R.id.txtViewSignup);
 
-        btnLogin = findViewById(R.id.btn_login);
-        cbRememberMe = findViewById(R.id.cb_remember_me);
+        btnLogin = findViewById(R.id.btnLogin);
+        cbRememberMe = findViewById(R.id.chechBoxRememberMe);
 
         tvSignUp.setOnClickListener(this);
         btnLogin.setOnClickListener(this);
@@ -146,8 +144,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
         }
 
-//        fbDataCollection(accessToken);
-
     }
 
     private void fbDataCollection(LoginResult loginResult) {
@@ -173,7 +169,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                             Log.e("loggedInName", name);
                             Log.e("loggedInProfilePicUrl", profileImageUrl);
 
-                            // Use the user's email address here
+                            // Using the user's email address here
                             String finalName = "";
                             if (name.equals("")) {
                                 finalName = email.split("@")[0];
@@ -245,8 +241,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
         dbManager = new DBManager(this);
         dbManager.open();
-//        Cursor cursor = dbManager.fetch();
-//        dbManager.insert()
     }
 
     @Override
@@ -284,19 +278,13 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.tv_signup:
-//                UtilityFunctions.getInstance().CloseKeyBoard(this);
+            case R.id.txtViewSignup:
                 startActivity(new Intent(this, RegistrationActivity.class));
                 break;
-            case R.id.btn_login:
-//                UtilityFunctions.getInstance().CloseKeyBoard(this);
+            case R.id.btnLogin:
                 validateUserLogin();
 
                 break;
-//            case R.id.tv_provider_signup:
-//                UtilityFunctions.getInstance().CloseKeyBoard(this);
-//                startActivity(new Intent(this, RegistrationServiceProviderActivity.class));
-//                break;
         }
     }
 
@@ -322,7 +310,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 Log.e("ursonr-data", "" + cursor.getString(0));
                 Log.e("ursonr-data", cursor.getString(1));
                 Log.e("ursonr-data", cursor.getString(2));
-//
+
             } while (cursor.moveToNext());
         } else {
             Toast.makeText(this, "No Records Exist. Check Email Password", Toast.LENGTH_LONG).show();

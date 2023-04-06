@@ -30,20 +30,8 @@ public class DBManager {
         dbHelper.close();
     }
 
-//    public long insertServiceReminder(ReminderModel reminderModel) {
-//        ContentValues contentValue = new ContentValues();
-//        contentValue.put(DatabaseHelper.COL_REMINDER_ID, reminderModel.getReminderId());
-//        contentValue.put(DatabaseHelper.COL_REMINDER_USER_ID, reminderModel.getUserId());
-//        contentValue.put(DatabaseHelper.COL_REMINDER_PROVIDER_ID, reminderModel.getProivderId());
-//        contentValue.put(DatabaseHelper.COL_SERVICE_DATE, reminderModel.getAppointmentDate());
-//        contentValue.put(DatabaseHelper.COL_SERVICE_ADDRESS, reminderModel.getAppointmentAddress());
-//
-//        return database.insert(DatabaseHelper.TABLE_REMINDER, null, contentValue);
-//    }
-
     public long insertServiceProvider(UserDetailsDataModel userDetailsDataModel) {
         ContentValues contentValue = new ContentValues();
-//        contentValue.put(DatabaseHelper.COL_ID, userDetailsDataModel.getId());
         contentValue.put(DatabaseHelper.COL_USER_NAME, userDetailsDataModel.getUserName());
         contentValue.put(DatabaseHelper.COL_USER_ADDRESS, userDetailsDataModel.getUserAddress());
         contentValue.put(DatabaseHelper.COL_USER_CITY, userDetailsDataModel.getUserCity());
