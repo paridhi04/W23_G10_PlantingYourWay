@@ -9,4 +9,69 @@
     <string name="txtViewNoAccount">Don\'t have an account?</string>
     <string name="btnSignIn">Sign In</string>
     <string name="txtViewSignUp">Sign Up</string>
+    <string name="label_login">Login</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="prompt_name">Name</string>
+    <string name="prompt_phone">Phone No</string>
+    <string name="prompt_province">Province</string>
+    <string name="prompt_address">Address</string>
+    <string name="prompt_city">City</string>
+    <string name="facebook_app_id">954065955736704</string>
+    <string name="fb_login_protocol_scheme">2698533c6b596a6ecb99d7dbab6584d8</string>
+    <string name="facebook_client_token">2698533c6b596a6ecb99d7dbab6584d8</string>
+    <string name="txtViewAppName">Planting Your Way</string>
+    <string name="txtViewGetStarted">Let\'s get you started...</string>
+    <string name="txtViewWelcomeBack">Welcome Back!</string>
+    <string name="txtViewRegisterNow">Don\'t have an account with us?</string>
+    <string name="txtViewAlreadyRegistered">Have and account with us already?</string>
+    <string name="txtViewRegiser">Register</string>
+
+    <string-array name = "provinces">
+        <item>Alberta</item>
+        <item>BC</item>
+        <item>Manitoba</item>
+        <item>Nova Scotia</item>
+        <item>Ontario</item>
+        <item>Quebec</item>
+    </string-array>
+
+    <string-array name = "alberta_cities">
+        <item>Calgary</item>
+        <item>Edmonton</item>
+        <item>Airdrie</item>
+    </string-array>
+
+    <string-array name = "bc_cities">
+        <item>Vancouver</item>
+        <item>Surrey</item>
+        <item>New Westminster</item>
+    </string-array>
+
+    <string-array name = "manitoba_cities">
+        <item>Winnipeg</item>
+        <item>Brandon</item>
+        <item>Winkler</item>
+    </string-array>
+
+    <string-array name = "nova_scotia_cities">
+        <item>Halifax</item>
+        <item>Sydney</item>
+        <item>Bedford</item>
+    </string-array>
+
+    <string-array name = "ontario_cities">
+        <item>Toronto</item>
+        <item>Mississauga</item>
+        <item>Ottawa</item>
+    </string-array>
+
+    <string-array name = "quebec_cities">
+    <item>Montreal</item>
+    <item>Laval</item>
+    <item>Sherbrooke</item>
+    </string-array>
+
 </resources>

@@ -2,8 +2,6 @@ package com.example.plantingyourway;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.room.Entity;
-import androidx.room.Room;
 
 import android.content.Intent;
 import android.os.Bundle;
