@@ -10,13 +10,11 @@ public class UserDetailsDataModel{
 	@SerializedName("user_name")
 	private String userName;
 
-
 	@SerializedName("user_address")
 	private String userAddress;
 
 	@SerializedName("user_city")
 	private String userCity;
-
 
 	@SerializedName("user_province")
 	private String userProvince;

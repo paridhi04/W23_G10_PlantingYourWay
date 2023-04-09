@@ -8,7 +8,7 @@
 
 
     <ImageView
-        android:id="@+id/imgViewLogo"
+        android:id="@+id/imgViewPaymentLogo"
         android:layout_width="@dimen/_55sdp"
         android:layout_height="@dimen/_55sdp"
         android:layout_gravity="center"
@@ -34,7 +34,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/scrollViewForm"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgViewLogo"
+        app:layout_constraintTop_toBottomOf="@+id/imgViewPaymentLogo"
         app:layout_constraintVertical_bias="0.20" />
 
 
@@ -70,7 +70,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/til_email"
+                android:id="@+id/txtInputLayoutEmail"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -95,7 +95,7 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/til_password"
+                android:id="@+id/txtInputLayoutPassword"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -104,7 +104,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.497"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/til_email">
+                app:layout_constraintTop_toBottomOf="@+id/txtInputLayoutEmail">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/editTxtPassword"
@@ -117,7 +117,7 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/til_name"
+                android:id="@+id/txtInputLayoutName"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -126,10 +126,10 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.497"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/til_password">
+                app:layout_constraintTop_toBottomOf="@+id/txtInputLayoutPassword">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/et_name"
+                    android:id="@+id/editTextName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
@@ -139,7 +139,7 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/til_phone"
+                android:id="@+id/txtInputLayoutPhone"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -149,10 +149,10 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.497"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/til_name">
+                app:layout_constraintTop_toBottomOf="@+id/txtInputLayoutName">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/et_phone"
+                    android:id="@+id/editTxtPhone"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
@@ -163,7 +163,7 @@
 
             </com.google.android.material.textfield.TextInputLayout>
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/til_address"
+                android:id="@+id/txtInputLayoutAddress"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -172,10 +172,10 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.497"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/til_phone">
+                app:layout_constraintTop_toBottomOf="@+id/txtInputLayoutPhone">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/et_address"
+                    android:id="@+id/editTxtAddress"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
@@ -187,7 +187,7 @@
 
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/til_province"
+                android:id="@+id/txtInputLayoutProvince"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -196,10 +196,10 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.497"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/til_address">
+                app:layout_constraintTop_toBottomOf="@+id/txtInputLayoutAddress">
 
                 <AutoCompleteTextView
-                    android:id="@+id/actv_province"
+                    android:id="@+id/AutoCompleteTxtViewProvince"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/prompt_province"
@@ -208,7 +208,7 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/til_city"
+                android:id="@+id/txtInputLayoutCity"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -217,10 +217,10 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.497"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/til_province">
+                app:layout_constraintTop_toBottomOf="@+id/txtInputLayoutProvince">
 
                 <AutoCompleteTextView
-                    android:id="@+id/actv_city"
+                    android:id="@+id/AutoCompleteTxtViewCity"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/prompt_city"
@@ -229,7 +229,7 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/btn_register"
+                android:id="@+id/btnRegister"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="@dimen/_24sdp"
@@ -237,12 +237,12 @@
                 android:background="@color/black"
                 android:enabled="false"
                 android:text="@string/txtViewRegiser"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 app:cornerRadius="@dimen/_6sdp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.498"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/til_city" />
+                app:layout_constraintTop_toBottomOf="@+id/txtInputLayoutCity" />
 
             <TextView
                 android:id="@+id/txtViewRegister"
@@ -251,11 +251,11 @@
                 android:layout_marginTop="@dimen/_44sdp"
                 android:text="@string/txtViewAlreadyRegistered"
                 android:textColor="@color/black"
-                app:layout_constraintStart_toStartOf="@+id/btn_register"
-                app:layout_constraintTop_toBottomOf="@+id/btn_register" />
+                app:layout_constraintStart_toStartOf="@+id/btnRegister"
+                app:layout_constraintTop_toBottomOf="@+id/btnRegister" />
 
             <TextView
-                android:id="@+id/tv_login"
+                android:id="@+id/txtViewLogin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/label_login"
@@ -263,7 +263,7 @@
                 android:textSize="@dimen/_14ssp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="@+id/txtViewRegister"
-                app:layout_constraintEnd_toEndOf="@+id/btn_register"
+                app:layout_constraintEnd_toEndOf="@+id/btnRegister"
                 app:layout_constraintTop_toTopOf="@+id/txtViewRegister" />
 
 

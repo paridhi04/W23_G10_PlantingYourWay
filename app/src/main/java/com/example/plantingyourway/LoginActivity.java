@@ -72,8 +72,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     }
 
     private void initializeUI() {
-        tilEmail = findViewById(R.id.til_email);
-        tilPassword = findViewById(R.id.til_password);
+        tilEmail = findViewById(R.id.txtInputLayoutEmail);
+        tilPassword = findViewById(R.id.txtInputLayoutPassword);
         etEmail = findViewById(R.id.editTxtEmail);
         etPassword = findViewById(R.id.editTxtPassword);
         tvSignUp = findViewById(R.id.txtViewSignup);
@@ -321,7 +321,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         SharedPref.writeBooleanValue(Constants.REMEMBER_ME, cbRememberMe.isChecked());
         SharedPref.writeLoggedUserDetails(Constants.USER_DETAILS, serviceProviderModel);
         Log.e("isServiceProerChecked", "false");
-        startActivity(new Intent(this, ShoppingActivity.class));
+        startActivity(new Intent(this, MainActivity.class));
         finish();
     }
 
@@ -363,10 +363,4 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         startActivity(new Intent(LoginActivity.this, RegistrationActivity.class));
     }
 
-
-//    @Override
-//    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-//        callbackManager.onActivityResult(requestCode, resultCode, data);
-//        super.onActivityResult(requestCode, resultCode, data);
-//    }
 }

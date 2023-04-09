@@ -29,8 +29,8 @@ public class SplashActivity extends AppCompatActivity {
             @Override
             public void run() {
                 if (SharedPref.readBoolenValue(Constants.REMEMBER_ME, false)) {
-                    Log.e("doSomethings", "treu");
-                    startActivity(new Intent(SplashActivity.this, ShoppingActivity.class));
+                    Log.e("doSomethings", "true");
+                    startActivity(new Intent(SplashActivity.this, MainActivity.class));
                     finish();
                 } else {
                     Log.e("doSomethings", "false");
@@ -43,7 +43,7 @@ public class SplashActivity extends AppCompatActivity {
             }
         };
         Timer timer = new Timer();
-        //Adding timer for 4 seconds
+        //Adding timer for 1 second
         timer.schedule(timerTask,1000);
     }
 }
