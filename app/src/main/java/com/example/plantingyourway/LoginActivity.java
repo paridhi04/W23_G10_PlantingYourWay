@@ -72,8 +72,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     }
 
     private void initializeUI() {
-        tilEmail = findViewById(R.id.til_email);
-        tilPassword = findViewById(R.id.til_password);
+        tilEmail = findViewById(R.id.txtInputLayoutEmail);
+        tilPassword = findViewById(R.id.txtInputLayoutPassword);
         etEmail = findViewById(R.id.editTxtEmail);
         etPassword = findViewById(R.id.editTxtPassword);
         tvSignUp = findViewById(R.id.txtViewSignup);

@@ -44,25 +44,25 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
     }
 
     private void initializeUi() {
-        tilEmail = findViewById(R.id.til_email);
-        tilPassword = findViewById(R.id.til_password);
-        tilName = findViewById(R.id.til_name);
-        tilAddress = findViewById(R.id.til_address);
-        tilCity = findViewById(R.id.til_province);
-        tilProvince = findViewById(R.id.til_city);
-        tilPhone = findViewById(R.id.til_phone);
+        tilEmail = findViewById(R.id.txtInputLayoutEmail);
+        tilPassword = findViewById(R.id.txtInputLayoutPassword);
+        tilName = findViewById(R.id.txtInputLayoutName);
+        tilAddress = findViewById(R.id.txtInputLayoutAddress);
+        tilCity = findViewById(R.id.txtInputLayoutProvince);
+        tilProvince = findViewById(R.id.txtInputLayoutCity);
+        tilPhone = findViewById(R.id.txtInputLayoutPhone);
 
 
         etEmail = findViewById(R.id.editTxtEmail);
         etPassword = findViewById(R.id.editTxtPassword);
-        etName = findViewById(R.id.et_name);
-        etAddress = findViewById(R.id.et_address);
-        etPhone = findViewById(R.id.et_phone);
-        actvProvince = findViewById(R.id.actv_province);
-        actvCity = findViewById(R.id.actv_city);
+        etName = findViewById(R.id.editTextName);
+        etAddress = findViewById(R.id.editTxtAddress);
+        etPhone = findViewById(R.id.editTxtPhone);
+        actvProvince = findViewById(R.id.AutoCompleteTxtViewProvince);
+        actvCity = findViewById(R.id.AutoCompleteTxtViewCity);
 
-        tvLogin = findViewById(R.id.tv_login);
-        btnRegister = findViewById(R.id.btn_register);
+        tvLogin = findViewById(R.id.txtViewLogin);
+        btnRegister = findViewById(R.id.btnRegister);
 
         tvLogin.setOnClickListener(this);
         btnRegister.setOnClickListener(this);
@@ -219,7 +219,7 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.btn_register:
+            case R.id.btnRegister:
 //                UtilityFunctions.getInstance().CloseKeyBoard(this);
                 if (dbManager.insertServiceProvider(new UserDetailsDataModel(name,address,selectedCity,selectedProvince,email,password,phone)) != -1) {
                     Toast.makeText(this, "Registration successful. Please Sign in.", Toast.LENGTH_LONG).show();
@@ -228,7 +228,7 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
                     Toast.makeText(this, "Registration failed. Please Try Again later", Toast.LENGTH_LONG).show();
                 }
                 break;
-            case R.id.tv_login:
+            case R.id.txtViewLogin:
                 finish();
                 break;
         }

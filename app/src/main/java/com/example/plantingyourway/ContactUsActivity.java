@@ -1,11 +1,7 @@
 package com.example.plantingyourway;
 
-import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
-import android.os.Message;
 //import android.se.omapi.Session;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -17,7 +13,6 @@ import javax.mail.Session;
 import javax.mail.Transport;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
-import javax.mail.internet.InternetAddress;
 import javax.mail.Message.RecipientType;
 
 
@@ -31,7 +26,7 @@ public class ContactUsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contact_us);
 
-        editTextName = findViewById(R.id.editTxtName);
+        editTextName = findViewById(R.id.editTextName);
         editTextEmail = findViewById(R.id.editTxtEmail);
         editTextMessage = findViewById(R.id.editTxtMessage);
 
