@@ -21,9 +21,15 @@ public class MainActivity extends AppCompatActivity {
         actionBar.setTitle("Planting Your Way");
 
         Button BtnShopNow = findViewById(R.id.btnShopNow);
+        Button BtnContactUs = findViewById(R.id.btnContactUs);
 
         BtnShopNow.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, ShoppingActivity.class);
+            startActivity(intent);
+        });
+
+        BtnContactUs.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, ContactUsActivity.class);
             startActivity(intent);
         });
 

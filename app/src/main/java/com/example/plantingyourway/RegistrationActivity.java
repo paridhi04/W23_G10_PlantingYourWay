@@ -29,9 +29,6 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
 
     EditText editTxtName, editTxtEmail, editTxtPassword;
 
-//    DatabaseHelper dbHelper = new DatabaseHelper();
-//    SQLiteDatabase db = dbHelper.getWritableDatabase();
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,9 +39,6 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
         actionBar.setDisplayUseLogoEnabled(true);
         actionBar.setTitle("Planting Your Way");
 
-//        editTxtName = findViewById(R.id.editTxtName);
-//        editTxtEmail = findViewById(R.id.editTxtEmail);
-//        editTxtPassword = findViewById(R.id.editTxtPassword);
 
         initializeUi();
     }
@@ -66,9 +60,6 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
         etPhone = findViewById(R.id.et_phone);
         actvProvince = findViewById(R.id.actv_province);
         actvCity = findViewById(R.id.actv_city);
-
-
-
 
         tvLogin = findViewById(R.id.tv_login);
         btnRegister = findViewById(R.id.btn_register);
@@ -109,9 +100,6 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
         startActivity(new Intent(RegistrationActivity.this, LoginActivity.class));
     }
 
-
-
-
     TextInputLayout tilEmail;
     TextInputLayout tilPassword;
     TextInputLayout tilName;
@@ -119,7 +107,6 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
     TextInputLayout tilCity;
     TextInputLayout tilProvince;
     TextInputLayout tilPhone;
-
 
     TextInputEditText etEmail;
     TextInputEditText etPassword;

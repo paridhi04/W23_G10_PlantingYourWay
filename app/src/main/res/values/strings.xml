@@ -28,8 +28,11 @@
     <string name="txtViewRegisterNow">Don\'t have an account with us?</string>
     <string name="txtViewAlreadyRegistered">Have and account with us already?</string>
     <string name="txtViewRegiser">Register</string>
+    <string name="txtViewFindUsHere">Find us here!</string>
+    <string name="txtViewContactUs">Contact Us</string>
+    <string name="btnSumbit">Submit</string>
 
-    <string-array name = "provinces">
+    <string-array name="provinces">
         <item>Alberta</item>
         <item>BC</item>
         <item>Manitoba</item>
@@ -38,40 +41,40 @@
         <item>Quebec</item>
     </string-array>
 
-    <string-array name = "alberta_cities">
+    <string-array name="alberta_cities">
         <item>Calgary</item>
         <item>Edmonton</item>
         <item>Airdrie</item>
     </string-array>
 
-    <string-array name = "bc_cities">
+    <string-array name="bc_cities">
         <item>Vancouver</item>
         <item>Surrey</item>
         <item>New Westminster</item>
     </string-array>
 
-    <string-array name = "manitoba_cities">
+    <string-array name="manitoba_cities">
         <item>Winnipeg</item>
         <item>Brandon</item>
         <item>Winkler</item>
     </string-array>
 
-    <string-array name = "nova_scotia_cities">
+    <string-array name="nova_scotia_cities">
         <item>Halifax</item>
         <item>Sydney</item>
         <item>Bedford</item>
     </string-array>
 
-    <string-array name = "ontario_cities">
+    <string-array name="ontario_cities">
         <item>Toronto</item>
         <item>Mississauga</item>
         <item>Ottawa</item>
     </string-array>
 
-    <string-array name = "quebec_cities">
-    <item>Montreal</item>
-    <item>Laval</item>
-    <item>Sherbrooke</item>
+    <string-array name="quebec_cities">
+        <item>Montreal</item>
+        <item>Laval</item>
+        <item>Sherbrooke</item>
     </string-array>
 
 </resources>
