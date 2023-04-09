@@ -321,7 +321,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         SharedPref.writeBooleanValue(Constants.REMEMBER_ME, cbRememberMe.isChecked());
         SharedPref.writeLoggedUserDetails(Constants.USER_DETAILS, serviceProviderModel);
         Log.e("isServiceProerChecked", "false");
-        startActivity(new Intent(this, ShoppingActivity.class));
+        startActivity(new Intent(this, MainActivity.class));
         finish();
     }
 
