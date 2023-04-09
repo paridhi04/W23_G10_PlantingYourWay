@@ -44,7 +44,7 @@ public class DBManager {
     public Cursor fetchUserDetails(String email, String password) {
         String sqlString = "SELECT * FROM " + DatabaseHelper.TABLE_USERS + " WHERE " +
                 DatabaseHelper.COL_USER_EMAIL + "='" + email + "' and " +
-                DatabaseHelper.COL_USER_PASSWORD + "='" + password + "' and ";
+                DatabaseHelper.COL_USER_PASSWORD + "='" + password + "'";
 
         Cursor cursor = database.rawQuery(sqlString, null);
         if (cursor != null) {

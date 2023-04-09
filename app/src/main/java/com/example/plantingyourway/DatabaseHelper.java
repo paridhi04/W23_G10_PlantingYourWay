@@ -13,7 +13,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public DatabaseHelper(@Nullable Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
-    public static final String TABLE_USERS = "SERVICE_PROVIDERS";
+    public static final String TABLE_USERS = "USERS";
 
     // Table columns
     public static final String COL_ID = "id";

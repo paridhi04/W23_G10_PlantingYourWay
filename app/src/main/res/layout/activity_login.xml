@@ -1,13 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"-->
-<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
-<!--    xmlns:tools="http://schemas.android.com/tools"-->
-<!--    android:layout_width="match_parent"-->
-<!--    android:layout_height="match_parent">-->
-
-<!--    <RelativeLayout-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent">-->
 
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -19,7 +10,7 @@
 
 
     <ImageView
-        android:id="@+id/imgViewLogo"
+        android:id="@+id/imgViewPaymentLogo"
         android:layout_width="@dimen/_55sdp"
         android:layout_height="@dimen/_55sdp"
         android:layout_gravity="center"
@@ -43,7 +34,7 @@
         android:textSize="@dimen/_20ssp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgViewLogo" />
+        app:layout_constraintTop_toBottomOf="@+id/imgViewPaymentLogo" />
 
     <TextView
         android:id="@+id/txtViewContinue"
@@ -92,7 +83,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/til_email"
+                android:id="@+id/txtInputLayoutEmail"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -115,7 +106,7 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/til_password"
+                android:id="@+id/txtInputLayoutPassword"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -125,7 +116,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.497"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/til_email">
+                app:layout_constraintTop_toBottomOf="@+id/txtInputLayoutEmail">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/editTxtPassword"
@@ -184,8 +175,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/remember_me"
-                app:layout_constraintStart_toStartOf="@+id/til_password"
-                app:layout_constraintTop_toBottomOf="@+id/til_password" />
+                app:layout_constraintStart_toStartOf="@+id/txtInputLayoutPassword"
+                app:layout_constraintTop_toBottomOf="@+id/txtInputLayoutPassword" />
 
             <com.facebook.login.widget.LoginButton
                 android:id="@+id/login_button"

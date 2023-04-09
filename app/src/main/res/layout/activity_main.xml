@@ -29,10 +29,11 @@
         app:layout_constraintTop_toBottomOf="@+id/imageBanner"
         app:layout_constraintVertical_bias="0.04000002" />
 
+
     <TextView
         android:id="@+id/txtDescriptionAboutUs"
-        android:layout_width="283dp"
-        android:layout_height="245dp"
+        android:layout_width="371dp"
+        android:layout_height="80dp"
         android:ellipsize="end"
         android:ems="20"
         android:inputType="textPersonName"
@@ -41,6 +42,7 @@
         android:padding="20sp"
         android:scrollbars="none"
         android:text="@string/aboutUsDescription"
+        android:textColor="#191818"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -52,11 +54,25 @@
         android:id="@+id/btnShopNow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="44dp"
         android:text="@string/shopNowBtn"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/btnContactUs"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDescriptionAboutUs"
+        app:layout_constraintVertical_bias="0.86" />
+
+    <Button
+        android:id="@+id/btnContactUs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtViewContactUs"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDescriptionAboutUs"
+        app:layout_constraintVertical_bias="0.74" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
