@@ -32,6 +32,11 @@ public class ProductPageActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_product_page);
 
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
+        actionBar.setDisplayUseLogoEnabled(true);
+        actionBar.setTitle("Planting Your Way");
+
         // Instantiate the products
         product1 = new Product("Ranunculus", "$8.99", "Product Description", R.drawable.img_4, 0);
         product2 = new Product("Indoor Plant", "$9.99", "Product Description", R.drawable.img_4,0);
