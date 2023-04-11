@@ -7,9 +7,7 @@
 
 
 
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:clipToPadding="false"
@@ -30,7 +28,7 @@
             android:id="@+id/imgProduct1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/img_4"
+            android:src="@drawable/img_7"
             android:scaleType="centerCrop"/>
 
 
@@ -57,7 +55,7 @@
             android:id="@+id/tvProductDescription1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Product Description"
+            android:text="Flowers throughout summmers."
             android:textSize="16sp"
             android:padding="10dp"/>
 
@@ -89,15 +87,14 @@
             android:scaleType="centerCrop"/>
 
 
-
         <TextView
             android:id="@+id/tvProductName2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Fresh Plant"
+            android:padding="10dp"
+            android:text="Indoor Plant"
             android:textSize="20sp"
-            android:textStyle="bold"
-            android:padding="10dp"/>
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/tvProductPrice2"
@@ -112,7 +109,7 @@
             android:id="@+id/tvProductDescription2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Product Description"
+            android:text="Stays evergreen when placed indoor."
             android:textSize="16sp"
             android:padding="10dp"
             tools:ignore="DuplicateIds" />
@@ -141,7 +138,7 @@
             android:id="@+id/imgProduct3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/img_4"
+            android:src="@drawable/img_8"
             android:scaleType="centerCrop"/>
 
 
@@ -168,7 +165,7 @@
             android:id="@+id/tvProductDescription3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Product Description"
+            android:text="Different colors with different fragnance."
             android:textSize="16sp"
             android:padding="10dp"
             tools:ignore="DuplicateIds" />

@@ -33,9 +33,9 @@ public class ProductPageActivity extends AppCompatActivity {
         setContentView(R.layout.activity_product_page);
 
         // Instantiate the products
-        product1 = new Product("Fresh Plant", "$8.99", "Product Description", R.drawable.img_4, 0);
-        product2 = new Product("Fresh Plant", "$9.99", "Product Description", R.drawable.img_4,0);
-        product3 = new Product("Fresh Plant", "$10.99", "Product Description", R.drawable.img_4,0);
+        product1 = new Product("Ranunculus", "$8.99", "Product Description", R.drawable.img_4, 0);
+        product2 = new Product("Indoor Plant", "$9.99", "Product Description", R.drawable.img_4,0);
+        product3 = new Product("Hyacinth", "$10.99", "Product Description", R.drawable.img_4,0);
 
         // Get references to the buttons
         btnAddToCart1 = findViewById(R.id.btnAddToCart1);
