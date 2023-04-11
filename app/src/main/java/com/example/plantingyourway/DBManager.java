@@ -30,7 +30,7 @@ public class DBManager {
         dbHelper.close();
     }
 
-    public long insertServiceProvider(UserDetailsDataModel userDetailsDataModel) {
+    public long insertUser(UserDetailsDataModel userDetailsDataModel) {
         ContentValues contentValue = new ContentValues();
         contentValue.put(DatabaseHelper.COL_USER_NAME, userDetailsDataModel.getUserName());
         contentValue.put(DatabaseHelper.COL_USER_ADDRESS, userDetailsDataModel.getUserAddress());

@@ -221,7 +221,7 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
         switch (v.getId()) {
             case R.id.btnRegister:
 //                UtilityFunctions.getInstance().CloseKeyBoard(this);
-                if (dbManager.insertServiceProvider(new UserDetailsDataModel(name,address,selectedCity,selectedProvince,email,password,phone)) != -1) {
+                if (dbManager.insertUser(new UserDetailsDataModel(name,address,selectedCity,selectedProvince,email,password,phone)) != -1) {
                     Toast.makeText(this, "Registration successful. Please Sign in.", Toast.LENGTH_LONG).show();
                     finish();
                 } else {
