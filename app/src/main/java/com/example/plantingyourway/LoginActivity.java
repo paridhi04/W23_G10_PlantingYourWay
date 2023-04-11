@@ -177,7 +177,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                                 finalName = name;
                             }
 
-                            if (dbManager.insertServiceProvider(new UserDetailsDataModel(finalName, "N.A", "N.A", "N.A", email, "N.A@A019", "N.A")) != -1) {
+                            if (dbManager.insertUser(new UserDetailsDataModel(finalName, "N.A", "N.A", "N.A", email, "N.A@A019", "N.A")) != -1) {
                                 Toast.makeText(LoginActivity.this, "Login successful", Toast.LENGTH_LONG).show();
                                 cbRememberMe.setChecked(true);
                                 saveDataToPref(new UserDetailsDataModel(

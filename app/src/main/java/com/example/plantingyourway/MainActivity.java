@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         Button BtnContactUs = findViewById(R.id.btnContactUs);
 
         BtnShopNow.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, ShoppingActivity.class);
+            Intent intent = new Intent(MainActivity.this, ProductPageActivity.class);
             startActivity(intent);
         });
 
